@@ -1,17 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {
-    Alert,
-    AppState,
-    AppStateStatus,
-    Button,
-    Linking,
-    NativeModules,
-    SafeAreaView, Text,
-    useColorScheme,
-    View,
-} from "react-native";
+import {Alert, NativeModules,} from "react-native";
 import nwApi from "./nftWalletApi";
-import {getIntent} from "react-native-get-intent";
 import NWException from "./NWExceeption";
 
 

@@ -1,13 +1,13 @@
 
-# react-native-catalk-nft-wallet
+# react-native-catalk-nftwallet
 
 ## Getting started
 
-`$ npm install react-native-catalk-nft-wallet --save`
+`$ npm install react-native-catalk-nftwallet --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-catalk-nft-wallet`
+`$ react-native link react-native-catalk-nftwallet`
 
 ### Manual installation
 
@@ -19,20 +19,19 @@
   - Add `new RNCatalkNftWalletPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-catalk-nft-wallet'
-  	project(':react-native-catalk-nft-wallet').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-catalk-nft-wallet/android')
+  	include ':react-native-catalk-nftwallet'
+  	project(':react-native-catalk-nftwallet').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-catalk-nftwallet/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-catalk-nft-wallet')
+      compile project(':react-native-catalk-nftwallet')
   	```
 
 
 ## Usage
 ```javascript
-import RNCatalkNftWallet from 'react-native-catalk-nft-wallet';
+import RNCatalkNftWallet from 'react-native-catalk-nftwallet';
 
 // TODO: What to do with the module?
 RNCatalkNftWallet;
 ```
-  
