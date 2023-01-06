@@ -1,6 +1,5 @@
 import NWException from './NWExceeption';
-import {Linking, Platform} from 'react-native';
-import DeviceInfo from 'react-native-device-info';
+import {Linking, NativeModules, Platform} from 'react-native';
 
 let platform = Platform.OS;
 let REGISTER_URL = '';
@@ -46,13 +45,15 @@ export default class NWAPI {
         this.redirect = redirect;
         if (this.platform === 'android') {
             if (!this.redirect) {
-                this.redirect = DeviceInfo.getBundleId
-                // 标为当前窗口
+                NativeModules.LinkingCustom.getName().then((packageName: any) => {
+                    this.redirect = packageName.packageName;
+                });
             }
         }
         this.processedIntent = undefined;
         this.setDevelop(false); //设置正式版本
     }
+
     setDevelop(develop: boolean) {
         //设置开发版本
         BASEURL = develop ? DEVELOP_BASEURL : PRODUCT_BASEURL;
