@@ -1,0 +1,21 @@
+{
+  "name": "react-native-catalk-nft-wallet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "react-native-device-info": "^10.3.0",
+    "react-native-get-intent": "^0.1.2"
+  }
+}
