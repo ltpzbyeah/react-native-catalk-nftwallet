@@ -1,6 +1,6 @@
 {
   "name": "react-native-catalk-nft-wallet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
@@ -12,10 +12,10 @@
   "author": "skyrooc",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.70.6",
-    "react-native-device-info": "^10.3.0"
+    "react-native": "^0.70.6"
   },
   "dependencies": {
-    "react-native-get-intent": "^0.1.2"
+    "react-native-get-intent": "^0.1.2",
+    "react-native-device-info": "^10.3.0"
   }
 }
