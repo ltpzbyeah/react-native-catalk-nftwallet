@@ -12,7 +12,7 @@
   "author": "skyrooc",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "^0.70.6"
   },
   "dependencies": {
     "react-native-device-info": "^10.3.0",
